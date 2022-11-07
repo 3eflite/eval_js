@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRES</title>
+</head>
+<body>
+<fieldset>
+<form action="http://bienvu.net/script.php" method="post" id="formulaire">
+<div>Ces zones sont obligatoires</div>
+<fieldset>
+<legend>vos coordonées</legend>
+<label for="nom">Votre nom* :</label><input type="text" name="nom" id="nom">
+<br>
+<label for="prénom">Votre prénom* :</label><input type="text" name="prénom" id="prenom">
+<br>
+<label for="sexe">Sexe</label><input type="radio" name="sexe" id="femme" value="Féminin"> Féminin
+<input type="radio" name="sexe" id="homme" value="Masculin"> Masculin
+<br>
+<Label for="date">Date de naissance:</Label><input type="date" name="date" id="date">
+<br>
+<label for="adresse">Adresse :</label><input type="text" name="adresse" id="adresse">
+<br>
+<label for="ville">Ville :</label><input type="text" name="Ville" id="ville">
+<br>
+<label for="Email">Email* :</label><input type="email" placeholder="dave.loper@afpa.fr" id="email">
+</fieldset>
+<fieldset>
+<legend>Votre demande</legend>
+<label for="sujet">Sujet</label>
+<select id="sujet" size="1"> 
+    <option value="veuillez séléctionner un sujet" selected>veuillez séléctionner un sujet</option>
+    <option value="Mes commandes">Mes commandes</option>
+    <option value="Question sur un produit">Question sur un produit</option>
+    <option value="Réclamation">Réclamation</option>
+    <option value="Autres">Autres</option>
+</select>
+<br>
+<label for="question">Votre question :</label><textarea name="question" id="question"cols="18" rows="1"></textarea>
+</fieldset>
+<input type="checkbox" id="checkbox"> <label for="formulaire">*J'accepte le traitement informatique de ce formulaire</label>
+<br>
+<input type="submit" id="envoie">
+<input type="reset">
+</form>
+</fieldset>
+<script src="script.js"></script>
+</body>
+</html>
