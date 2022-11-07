@@ -20,18 +20,20 @@ while (A < 100)
         anciens++;
     }
 
-    if (A>=100)
-    {
-        centenaire++;
-    }
-
 }
 
-console.log("Le nombre de de personnes ayant moins de 20 ans est : "+enfants);
-console.log("Le nombre de personnes ayant entre 20 et 40 ans est : "+adultes);
-console.log("Le nombre de personnes ayant plus de 40 ans est : "+anciens);
+console.log("Le nombre d'enfants est : "+enfants);
+console.log("Le nombre d'adultes est : "+adultes);
+console.log("Le nombre d'anciens' : "+anciens);
+age = parseInt(prompt("Saisissez votre age, rentrez un centenaire pour arrêter la saisie"));
+
+
+
+if ( age >= 100) {
+    centenaire++;
+}
 
 document.write("Il y a "+enfants+" personnes de moins de 20 ans.");
 document.write(" Il y a "+adultes+" personnes ayant entre 20 et 40 ans.");
 document.write(" Il y a "+anciens+" personnes ayant plus de 40 ans.");
-document.write(" Il y a également un centenaire.");
+document.write(" Il y a "+centenaire+" qui est centenaire.");
